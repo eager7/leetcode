@@ -1,6 +1,8 @@
 package addTwoNumbers
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //Definition for singly-linked list.
 type ListNode struct {
@@ -8,16 +10,20 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func (l *ListNode) Out() (list []int) {
-	list = append(list, l.Val)
-	iter := func(temp *ListNode) {
-		for temp.Next != nil {
-			list = append(list, temp.Next.Val)
-			temp = temp.Next
-		}
+func (li *ListNode) Out() (list []int) {
+	temp := li
+	list = append(list, temp.Val)
+	for temp.Next != nil {
+		list = append(list, temp.Next.Val)
+		temp = temp.Next
 	}
-	iter(l)
 	return list
+}
+
+func Iter() {
+	li :=  &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}}
+	fmt.Println(li.Out())
+	fmt.Println(li.Out())
 }
 
 /*

@@ -1,8 +1,10 @@
 package addTwoNumbers
 
+import "fmt"
+
 func Best(l1 *ListNode, l2 *ListNode) *ListNode {
-	list, temp := new(ListNode), new(ListNode)
-	temp = list //这里是值复制，temp和list指向同一个对象，temp的操作不会影响list
+	list := new(ListNode)
+	temp := list //通过temp操作，保留原始list head用于返回
 	var up int
 	for {
 		v := temp.Val + l1.Val + l2.Val
@@ -30,5 +32,6 @@ func Best(l1 *ListNode, l2 *ListNode) *ListNode {
 		temp.Next = &ListNode{Val: up} //向前进位
 		up, temp = 0, temp.Next        //将up清空
 	}
+	fmt.Printf("list:%p, temp:%p\n", list, temp)
 	return list
 }

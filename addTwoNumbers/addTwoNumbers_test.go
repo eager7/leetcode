@@ -73,3 +73,10 @@ func TestBest(t *testing.T) {
 		t.Fatal("must out [7,0,8]")
 	}
 }
+
+func TestIter(t *testing.T) {
+	l :=  &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}}
+
+	fmt.Println(l.Out())
+	fmt.Println(l.Out())
+}
