@@ -12,11 +12,11 @@ func my(nums1 []int, nums2 []int) float64 {
 
 	left, right := 0, 0
 	for i := 0; i < maxLen; i++ {
-		if nums1[i]<nums2[i] {
+		if nums1[i] < nums2[i] {
 			total = append(total, nums1[i])
 			temp1 = append(temp1, nums2[i])
 		} else {
-			left=nums1[i]
+			left = nums1[i]
 		}
 	}
 	return 0

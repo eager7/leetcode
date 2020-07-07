@@ -21,7 +21,7 @@ func (li *ListNode) Out() (list []int) {
 }
 
 func Iter() {
-	li :=  &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}}
+	li := &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}}
 	fmt.Println(li.Out())
 	fmt.Println(li.Out())
 }

@@ -75,7 +75,7 @@ func TestBest(t *testing.T) {
 }
 
 func TestIter(t *testing.T) {
-	l :=  &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}}
+	l := &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3}}}
 
 	fmt.Println(l.Out())
 	fmt.Println(l.Out())

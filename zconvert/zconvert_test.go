@@ -19,7 +19,7 @@ func TestConvert(t *testing.T) {
 	}
 
 	for _, l := range list {
-		if out := best(l.In, l.Rows);out != l.Out {
+		if out := best(l.In, l.Rows); out != l.Out {
 			fmt.Println(l.Rows)
 			t.Fatal(l.Out + "--" + out)
 		}
