@@ -10,7 +10,7 @@ func my(m int, n int) int {
 	if m == 1 || n == 1 {
 		return 1
 	}
-	var bp = make([][]int, m*n)
+	var bp = make([][]int, m)//初始化数组
 	for i := 0; i < m; i++ {
 		bp[i] = make([]int, n)
 	}

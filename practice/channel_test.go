@@ -21,3 +21,10 @@ func TestChannel(t *testing.T) {
 		}
 	}
 }
+
+func TestSendChannel(t *testing.T) {
+	var channel chan string
+	channel = make(chan string)
+	fmt.Println(<-channel)
+	channel <- "pct"
+}
