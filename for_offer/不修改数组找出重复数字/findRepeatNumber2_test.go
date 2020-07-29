@@ -1,4 +1,4 @@
-package findRepeatNumber2
+package 不修改数组找出重复数字
 
 import "testing"
 
