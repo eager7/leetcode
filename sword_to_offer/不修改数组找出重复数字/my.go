@@ -1,4 +1,4 @@
-package 不修改数组找出重复数字
+package findRepeatNumber
 
 //使用二分法逐步缩减数组重复数字范围
 func my(nums []int) int {
