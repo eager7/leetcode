@@ -9,7 +9,7 @@ func TestExample(t *testing.T) {
 	}
 	tList := []Te{
 		{In: []int{2, 3, 1, 0, 2, 5, 3}, Out: 2},
-		{In: []int{1,1}, Out: 1},
+		{In: []int{1, 1}, Out: 1},
 	}
 
 	for _, te := range tList {

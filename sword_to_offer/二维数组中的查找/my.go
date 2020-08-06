@@ -15,7 +15,7 @@ func my(matrix [][]int, target int) bool {
 	startN, endN := 0, n
 	for i := 0; i < n; i++ {
 		if matrix[i][m-1] < target { //裁剪掉多余部分
-			startN = i+1 //当前列丢掉
+			startN = i + 1 //当前列丢掉
 		}
 		if matrix[i][0] > target {
 			endN = i //当前列丢掉
@@ -32,7 +32,7 @@ func my(matrix [][]int, target int) bool {
 	startM, endM := 0, m
 	for i := 0; i < m; i++ {
 		if matrix[n-1][i] < target {
-			startM = i+1
+			startM = i + 1
 		}
 		if matrix[0][i] > target {
 			endM = i

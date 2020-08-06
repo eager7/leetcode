@@ -13,10 +13,10 @@ func QuickSort(data []int) (list []int) {
 	obj := data[0]
 	left, right := 1, len(data)-1
 	for left < right {
-		if data[right] >= obj { //在右边找到一个小于标的的值
+		if data[right] > obj { //在右边找到一个小于标的的值
 			right--
 		} else {
-			if data[left] < obj { //在左边找到一个大于标的的值
+			if data[left] <= obj { //在左边找到一个大于标的的值
 				left++
 			}
 		}
@@ -25,7 +25,7 @@ func QuickSort(data []int) (list []int) {
 			right--
 		}
 	}
-	if data[0]>data[left]{
+	if data[0] > data[left] {
 		data[0], data[left] = data[left], data[0]
 	}
 	QuickSort(data[:left])

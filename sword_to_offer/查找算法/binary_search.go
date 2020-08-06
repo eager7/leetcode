@@ -5,8 +5,8 @@ func BinarySearch(list []int, target int) bool {
 	if len(list) == 0 {
 		return false
 	}
-	if len(list)==1{
-		return list[0]==target
+	if len(list) == 1 {
+		return list[0] == target
 	}
 	middle := list[len(list)/2]
 	if middle < target {
@@ -34,5 +34,5 @@ func BinarySearch2(list []int, target int) bool {
 			return true
 		}
 	}
-	return list[start]==target
+	return list[start] == target
 }

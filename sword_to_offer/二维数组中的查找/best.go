@@ -9,7 +9,7 @@ func best(matrix [][]int, target int) bool {
 
 	sn, en, sm, em := 0, n-1, 0, m-1
 	for sn <= en && sm <= em {
-		temp1, temp2 := matrix[en][sm], matrix[sn][em]//取出左上角和右下角数字
+		temp1, temp2 := matrix[en][sm], matrix[sn][em] //取出左上角和右下角数字
 		if temp1 < target {
 			sm++ //消掉第一行
 		} else if temp1 > target {
@@ -26,9 +26,9 @@ func best(matrix [][]int, target int) bool {
 			return true
 		}
 	}
-	for i:=sn;i<en;i++{
-		for j:=sm;j<em;j++{
-			if matrix[i][j]==target{//可以包含查询右下角的元素
+	for i := sn; i < en; i++ {
+		for j := sm; j < em; j++ {
+			if matrix[i][j] == target { //可以包含查询右下角的元素
 				return true
 			}
 		}

@@ -4,8 +4,8 @@ package findRepeatNumber
 func my(nums []int) int {
 	start, end := 1, len(nums)
 	for start != end {
-		middle := (end-start)/2 + start //找出中位数 23345
-		if start == middle || end == middle {//这里需要特殊处理只剩有限相同数字的情况，如5,5,5,5,5,5,5
+		middle := (end-start)/2 + start       //找出中位数 23345
+		if start == middle || end == middle { //这里需要特殊处理只剩有限相同数字的情况，如5,5,5,5,5,5,5
 			return middle
 		}
 

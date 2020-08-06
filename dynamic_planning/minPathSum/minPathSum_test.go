@@ -11,9 +11,9 @@ func TestExample(t *testing.T) {
 		Out int
 	}
 	var in = [][]int{
-		{1,3,1},
-		{1,5,1},
-		{4,2,1},
+		{1, 3, 1},
+		{1, 5, 1},
+		{4, 2, 1},
 	}
 	var list = []Te{
 		{In: in, Out: 7},

@@ -114,7 +114,7 @@ func my(s string, p string) bool {
 					if string(ch) == reg.reg[:1] { //匹配到
 						num++
 					} else {
-						break//一旦未匹配到需要跳出，避免匹配渗透到后面字符
+						break //一旦未匹配到需要跳出，避免匹配渗透到后面字符
 					}
 				}
 				//TODO:如果出现a*a的情况需要保留后面这个a

@@ -2,11 +2,11 @@ package minPathSum
 
 func my(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
-	var dp = make([][]int, m)//初始化数组
+	var dp = make([][]int, m) //初始化数组
 	for i := 0; i < m; i++ {
 		dp[i] = make([]int, n)
 	}
-	dp[0][0] = grid[0][0]//初始化左上角值
+	dp[0][0] = grid[0][0] //初始化左上角值
 	for i := 1; i < m; i++ {
 		dp[i][0] = dp[i-1][0] + grid[i][0]
 	}

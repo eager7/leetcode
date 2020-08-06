@@ -28,5 +28,5 @@ func MergeSort(data []int) (list []int) {
 			rightData = rightData[1:]
 		}
 	}
-	return append(list, append(leftData, rightData...)...)//可能有剩余部分和一个空切片，都加进去即可
+	return append(list, append(leftData, rightData...)...) //可能有剩余部分和一个空切片，都加进去即可
 }

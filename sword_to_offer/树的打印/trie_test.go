@@ -7,23 +7,23 @@ import (
 
 func TestTrie(t *testing.T) {
 	trie := TreeNode{
-		Val:   10,
-		Left:  &TreeNode{
-			Val:   6,
-			Left:  &TreeNode{
-				Val:   4,
+		Val: 10,
+		Left: &TreeNode{
+			Val: 6,
+			Left: &TreeNode{
+				Val: 4,
 			},
 			Right: &TreeNode{
-				Val:   8,
+				Val: 8,
 			},
 		},
 		Right: &TreeNode{
-			Val:   14,
-			Left:  &TreeNode{
-				Val:   12,
+			Val: 14,
+			Left: &TreeNode{
+				Val: 12,
 			},
 			Right: &TreeNode{
-				Val:   16,
+				Val: 16,
 			},
 		},
 	}
