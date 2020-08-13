@@ -8,8 +8,8 @@ func TestName(t *testing.T) {
 		out int
 	}
 	tList := []Te{
-		{in: 2, out: 1},
 		{in: 10, out: 36},
+		{in: 2, out: 1},
 	}
 	for _, te := range tList {
 		if out := cuttingRope(te.in); out != te.out {
