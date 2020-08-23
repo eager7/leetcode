@@ -1,11 +1,9 @@
 package sort
 
 func Partition(data []int, start, end int) int {
-
 	small := start - 1 //small表示比基准小的数字的游标
 	for index := start; index < end; index++ {
-		m, n := data[index], data[end]
-		if m < n {
+		if data[index] < data[end] {
 			small++             //游标向右移
 			if small != index { //游标和index相等表示small和index同时递增，即没有遇到比基准大的值
 				data[small], data[index] = data[index], data[small]
