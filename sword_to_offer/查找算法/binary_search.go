@@ -8,11 +8,11 @@ func BinarySearch(list []int, target int) bool {
 	if len(list) == 1 {
 		return list[0] == target
 	}
-	middle := list[len(list)/2]
+	middle := list[len(list)>>1]
 	if middle < target {
-		return BinarySearch(list[len(list)/2:], target)
+		return BinarySearch(list[len(list)>>1:], target)
 	} else if middle > target {
-		return BinarySearch(list[:len(list)/2], target)
+		return BinarySearch(list[:len(list)>>1], target)
 	} else {
 		return true
 	}

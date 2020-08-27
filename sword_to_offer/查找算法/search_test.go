@@ -12,7 +12,7 @@ var TeList []Te
 
 func TestName(t *testing.T) {
 	for _, te := range TeList {
-		if BinarySearch2(te.In1, te.In2) != te.Out {
+		if BinarySearch(te.In1, te.In2) != te.Out {
 			t.Fatal(te)
 		}
 	}

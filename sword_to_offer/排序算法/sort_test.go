@@ -48,5 +48,6 @@ func TestQuickSort(t *testing.T) {
 	}
 	start := time.Now()
 	QuickSort2(list)
+	fmt.Println(list)
 	fmt.Println(time.Since(start))
 }
