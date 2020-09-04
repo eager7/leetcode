@@ -15,4 +15,7 @@ func TestContext(t *testing.T) {
 	c5, cancel := context.WithTimeout(c1, time.Second)
 
 	fmt.Println(c1, c2, c3, c4, c5, cancel)
+	cc := context.WithValue(context.WithValue(c3, "key1", "value1"), "key2", "value2")
+	fmt.Println(cc)
+	fmt.Println(cc.Value("key2"))
 }

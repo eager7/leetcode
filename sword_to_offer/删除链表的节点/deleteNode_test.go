@@ -4,11 +4,11 @@ import "testing"
 
 func TestName(t *testing.T) {
 	list := &ListNode{
-		Val:  4,
+		Val: 4,
 		Next: &ListNode{
-			Val:  5,
+			Val: 5,
 			Next: &ListNode{
-				Val:  1,
+				Val: 1,
 				Next: &ListNode{
 					Val:  9,
 					Next: nil,

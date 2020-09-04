@@ -15,15 +15,15 @@ func Partition(data []int, start, end int) int {
 	return cur //返回分界线
 }
 
-func QuickSort2(data[]int) {
-	if len(data)==0{
+func QuickSort2(data []int) {
+	if len(data) == 0 {
 		return
 	}
 	index := Partition(data, 0, len(data)-1)
 	if len(data[:index]) > 0 {
 		QuickSort2(data[:index])
 	}
-	if len(data[index+1:])>0{
+	if len(data[index+1:]) > 0 {
 		QuickSort2(data[index+1:])
 	}
 }

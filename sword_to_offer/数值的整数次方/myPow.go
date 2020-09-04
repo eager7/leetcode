@@ -37,8 +37,8 @@ func myPow(x float64, n int) float64 {
 			return x
 		default:
 			ret := myPow(x, exp>>1) //使用移位替代除2
-			ret = ret * ret       //取平方
-			if n&0x01 == 1 {      //n是奇数，则需要额外乘上x
+			ret = ret * ret         //取平方
+			if n&0x01 == 1 {        //n是奇数，则需要额外乘上x
 				ret = ret * x
 			}
 			return ret
